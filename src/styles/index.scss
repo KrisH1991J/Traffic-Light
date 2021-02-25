@@ -1,13 +1,40 @@
 @import "~bootstrap/scss/bootstrap.scss";
+body {
+    position: relative;
+    height: 100vh;
+}
 
-/* 
+.trafficLight {
+    position: absolute;
+    left: 45%;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.trafficTop {
+    background-color: black;
+    width: 10px;
+    height: 70px;
+    margin-left: 78px;
+}
 
-*/
+.trafficBottom {
+    background-color: black;
+    width: 65px;
+    height: 185px;
+    margin-left: 50px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &.red { background-color: #dc3545;}
+    &.yellow { background-color: #ffc107;}
+    &.green { background-color: #28a745;}
+    &.selected { box-shadow: #f8ffcc 0px 0px 50px 20px;}
+}
